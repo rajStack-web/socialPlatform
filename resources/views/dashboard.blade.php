@@ -64,7 +64,7 @@
                     <button wire:click="decrement">-</button>
                 </div> --}}
             <livewire:counter />
-
+            <livewire:create-post />    
             </div>
         </div>
     </div>

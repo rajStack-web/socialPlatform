@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\CreatePost;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SocialAuthController;
@@ -24,6 +25,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    //livewire create post
+     Route::get('/posts', CreatePost::class)->name('posts');
 });
 
 // Google OAuth

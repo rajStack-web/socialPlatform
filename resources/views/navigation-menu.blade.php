@@ -16,6 +16,11 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('posts') }}" :active="request()->routeIs('posts')">
+                        {{ __('Posts') }}
+                    </x-nav-link>
+                </div>
 
                 <!-- Search Bar -->
                 {{-- <div class="hidden sm:flex items-center ms-6 flex-1 max-w-md">
